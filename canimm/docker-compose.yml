@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  canimm:
+    image: ${DOCKER_REGISTRY-}canimm
+    build:
+      context: .
+      dockerfile: canimm/Dockerfile
